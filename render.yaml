@@ -10,7 +10,7 @@ services:
   # Django
   - type: web
     name: django-baby-app
-    env: python
+    env: python3
     region: singapore
     buildCommand: "./build.sh"
     startCommand: "gunicorn config.wsgi:application"
